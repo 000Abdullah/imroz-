@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap');
+
+/*====== 01 site default css ======*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.container-full {
+	width: 100%;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-full:before,
+.container-full:after,
+.container:before,
+.container:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*.container:before,
+.container:after{
+	content: "";
+	clear:both;
+	display:table;
+}*/
+
+.col-100 {
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-70 {
+	width: 70%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-50 {
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-60 {
+	width: 60%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-33 {
+	width: 33%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-30 {
+	width: 30%;
+	float: left;
+	padding: 0 15px;
+}
+
+
+.col-25 {
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-20 {
+	width: 20%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-75 {
+	width: 75%;
+	float: left;
+	padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.section-padding {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.section-padding-top {
+	padding-top: 80px;
+}
+
+.section-padding-bottom {
+	padding-bottom: 80px;
+}
+
+.btn {
+	text-transform: capitalize;
+	color: #fff;
+	background: #000;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: inline-block;
+
+}
+
+
+/*====== 01 header top css ======*/
+
+.header-top {
+	background: #111;
+	padding: 10px 0;
+}
+
+.header-top i {
+	padding: 5px;
+}
+
+.heder-top-left {
+	list-style: none;
+	display: inline-block;
+
+}
+
+.heder-top-left li,
+.heder-top-right li {
+	list-style: none;
+	display: inline-block;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.heder-top-left li a,
+.heder-top-right li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.heder-top-right {
+	text-transform: capitalize;
+	float: right;
+}
+
+
+/*====== 02 home section ======*/
+
+.home {
+	background: url("001.jpeg") no-repeat center/cover;
+	/*background-image:url("001.jpeg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;*/
+	width: 100%;
+	height: 100vh;
+}
+
+.main-menu {
+	padding: 25px 0;
+}
+
+.main-menu ul {
+	float: right;
+}
+
+.main-menu ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.main-menu ul li a {
+	text-decoration: none;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	transition: .5s;
+	border-bottom: 4px solid transparent;
+}
+
+.main-menu ul li a:hover {
+	border-bottom: 4px solid #63A706;
+}
+
+.home-content {
+	padding: 200px 0;
+}
+
+.home-content h6 {
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.home-content h1 {
+	font-size: 100px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.home-content .btn {
+	color: #333;
+	background: #E6A303;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	padding: 7px 17px;
+	transition: .5s;
+}
+
+.home-content .btn:hover {
+	opacity: .4;
+}
+
+.home-box {
+	padding: 35px;
+	color: #fff;
+	display: flex;
+	/*background:rgba(0, 0, 0, 0.6);*/
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+}
+
+
+.home-box:hover {
+	/*background:rgba(0, 0, 0, 2);*/
+	transition: .5s;
+}
+
+.home-box img {
+	width: 65px;
+	padding: 33px 0;
+	transition: .5s;
+}
+
+.home-box:hover img {
+	transform: scale(1.3);
+	transition: .5s;
+}
+
+.home-box-content {
+	padding-left: 24px;
+}
+
+.home-box-content h4 {
+	font-size: 25px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 30px;
+	padding-bottom: 7px;
+}
+
+.home-box-content a {
+	font-size: 15px;
+	font-weight: 700;
+	color: #F0AB06;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.home-box:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: .5;
+	z-index: -1;
+	left: 0;
+	top: 0;
+}
+
+
+.home-box:hover:before {
+	opacity: 1;
+	transition: .5s;
+}
+
+/*====== 02 home section END.......... ======*/
+
+
+/*------ POPULAR COURSES start ---------*/
+
+.section-title {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.section-title:before {
+	content: "";
+	position: absolute;
+	background: #333;
+	height: 1px;
+	width: 50px;
+	bottom: 0;
+	left: 0;
+
+}
+
+.section-title h3 {
+	font-weight: 700;
+	font-size: 30px;
+	color: #333333;
+	padding-bottom: 30px;
+}
+
+
+.courses-box {
+	border: 2px solid #ddd;
+	wider: 100%;
+
+}
+
+.courses-bg {
+	/*background:url("aa.jpeg") no-repeat center/cover;*/
+	height: 200px;
+	width: 100%;
+	position: relative;
+	transition: .4s;
+	overflow: hidden;
+}
+
+.courses-bg img {
+	height: 100%;
+	width: 100%;
+	transition: .4s;
+}
+
+.courses-bg .btn {
+	color: #333;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+	background: #FFB606;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 40px;
+	width: 100px;
+	line-height: 40px;
+	text-transform: capitalize;
+	/*display:none; 
+	visibility:hidden;*/
+	opacity: 0;
+	transition: .4s;
+
+}
+
+.courses-bg:hover .btn {
+	/*display:inline-block;
+	visibility:visible;*/
+	opacity: 1;
+	transition: .4s;
+}
+
+.courses-bg:hover img {
+	transform: scale(1.1);
+	transition: .4s;
+}
+
+.author {
+	position: relative;
+	border: 2px solid #fff;
+	text-align: center;
+}
+
+.author img {
+	left: 50%;
+	top: -25px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 50%;
+	margin-left: -25px;
+}
+
+.author a {
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 14px;
+	color: #7a7a7a;
+	padding: 36px 0 25px 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.courses-box h4 {
+	text-align: center;
+	padding-bottom: 35px;
+
+}
+
+.courses-box h4 a {
+	font-size: 17px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #333;
+	transition: .3s;
+}
+
+.courses-box h4 a:hover {
+	color: #ffb606;
+}
+
+.courses-footer {
+	margin: 15px;
+	border-top: 1px solid #ddd;
+	padding: 15px 0 5px 0;
+}
+
+.courses-footer span {
+	color #999;
+	font-size: 14px;
+}
+
+.courses-footer span i {
+	padding-right: 5px;
+}
+
+.courses-footer .user {
+	padding-right: 10px;
+}
+
+.courses-footer .price {
+	float: right;
+	color: #0adc0a;
+	text-transform: capitalize;
+}
+
+.courses-read-more-btn {
+	text-align: center;
+
+}
+
+.courses .btn {
+	padding: 15px 30px;
+	text-transform: uppercase;
+	transition: .3s;
+	border: 2px solid transparent;
+}
+
+.courses .btn:hover {
+	background: #fff;
+	color: #000;
+	border: 2px solid #101010;
+
+}
+
+.courses-read-more-btn a {
+	margin-top: 65px;
+}
+
+/*------------ registration section ---------------*/
+
+.registration {
+	background: url("as.jpeg") no-repeat center/cover;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.registration:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .6;
+}
+
+.registration-left {
+	padding: 100px 0;
+}
+
+.registration-left h6 {
+	font-weight: 700;
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.registration-left h6 span {
+	color: #FEB506;
+}
+
+
+ul.count-down li {
+	color: #fff;
+	list-style: none;
+	display: inline-block;
+	border: 1px solid #fff;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
+	padding: 8px;
+	margin-right: 25px;
+}
+
+ul.count-down li span {
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.registration-left h1 {
+	font-weight: 700px;
+	font-size: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 10px 0 30px 0;
+}
+
+
+.registration-right {
+	background: #fff;
+	padding: 35px;
+	margin-left: 150px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.registration-right:before {
+	content: "";
+	position: absolute;
+	height: 600px;
+	width: 600px;
+	left: -100px;
+	top: -430px;
+	background: #FEB506;
+	border-radius: 0 0 50% 50%;
+	z-index: -1
+}
+
+
+.registration-right h4 {
+	text-align: center;
+	'
+font-weight: 700;
+	font-size: 23px;
+	padding-bottom: 100px;
+	color: #fff;
+	line-height: 30px;
+
+}
+
+.registration-right input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 13px;
+	border: 1px solid #ddd;
+}
+
+.registration-right button {
+	width: 100%;
+	border: none;
+	text-transform: uppercase;
+	padding: 15px;
+	color: #fff;
+	background: #000;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.registration-right button:hover {
+	background: #FEB506;
+	color: #000;
+}
+
+/*--------------- Events -----------*/
+
+.singel-event {
+	border-top: 1px solid #ddd;
+	padding: 50px 0;
+	display: flex;
+}
+
+.event .section-title h3 {
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.event .section-title {
+	margin-bottom: 90px;
+}
+
+.event .section-title:before {
+	bottom: -30px;
+}
+
+.event .section-title p {
+	color: #999;
+	font-size: 17px;
+}
+
+.event .section-title .btn {
+	float: right;
+	margin-top: -30px;
+	padding: 13px 25px;
+	background: transparent;
+	border: 1px solid #000;
+	margin-right: 15px;
+	color: #000;
+	transition: .3s;
+}
+
+.event .section-title .btn:hover {
+	background: #000;
+	color: #fff;
+}
+
+.date {
+	color: #ffb606;
+	font-size: 70px;
+	font-weight: 700;
+	position: relative;
+}
+
+.date:after {
+	content: "";
+	position: absolute;
+	height: 60px;
+	width: 1px;
+	color: #ddd;
+	right: 0;
+	top: 12;
+}
+
+.date span {
+	font-size: 15px;
+	display: block;
+	text-transform: uppercase;
+	padding-left: 30px;
+	padding-top:
+}
+
+.event-content {
+	padding-right: 50px;
+}
+
+.event-content h3 a {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #000;
+	transition: .3s;
+}
+
+.event-content h3 a:hover {
+	color: #ffb606;
+}
+
+.event-content ul {
+	padding: 13px 0 22px 0;
+}
+
+.event-content ul li {
+	list-style: none;
+	display: inline-block;
+	color: #999999;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-right: 20px;
+}
+
+.event-content p {
+	font-size: 16px;
+	color: #999;
+	line-height: 25px;
+}
+
+.event-img img {
+	height: 100%;
+	width: 100%;
+}
+
+
+/*--------------- News -----------*/
+
+.news {
+	background: url("news.jpeg") no-repeat center/cover;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.news :after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.news .section-title {
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.news .section-title h3 {
+	color: #fff;
+	padding-bottom: 14px;
+}
+
+.news .section-title p {
+	color: #fff;
+}
+
+.news .section-title:before {
+	left: 0;
+	background: #fff;
+}
+
+.event-box img {
+	width: 100%;
+	height: 220px;
+	margin-bottom: -20px;
+}
+
+.event-box {
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.event-box span {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #f7b10d;
+	padding: 10px 60px;
+	display: inline-block;
+}
+
+.event-box a {
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: 700;
+	padding-top: 20px;
+	display: inline-block;
+}
+
+
+/*--------------- Review -----------*/
+
+.review .section-title {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.review .section-title h3 {
+	padding-bottom: 15px;
+}
+
+.review .section-title:before {
+	left: 50%;
+	margin-left: -25px;
+}
+
+.subscriber {
+	position: relative;
+	text-align: center;
+	margin-top: -10px;
+	z-index: 1;
+	padding-top: 130px;
+	height: 250px;
+
+}
+
+.subscriber:after {
+	content: "";
+	position: absolute;
+	background: url(0011.jpeg) no-repeat;
+	height: 300px;
+	width: 706px;
+	left: -6%;
+	top: 17px;
+	margin-left: 330px;
+	z-index: -1;
+}
+
+.subscriber input {
+	width: 430px;
+	border: 1px solid #F4AF08;
+	padding: 10px;
+	color: #666;
+	position: relative;
+	bottom: -25px;
+	left: 5px;
+}
+
+.subscriber button {
+	padding: 10px 25px;
+	position: relative;
+	left: 0px;
+	bottom: -25px;
+	border: none;
+	background: #F4AF08;
+	color: #333;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	line-height: 18px;
+}
+
+
+
+/*--------------- footer -----------*/
+
+.footer {
+	background: #000;
+}
+
+.footer-content li {
+	list-style: none;
+}
+
+.footer-content li a {
+	color: #999;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.footer-logo span {
+	display: block;
+	color: #999;
+	padding: 0 0 10px 0;
+}
+
+.footer-logo span i {
+	padding: 10px;
+}
+
+.footer-logo span a {
+	text-decoration: none;
+	color: #999;
+}
+
+.footer-logo img {
+	padding-bottom: 25px;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social li a {
+	border: 1px solid #999;
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 50%;
+	margin-right: 7px;
+	transition: .3s;
+}
+
+.social {
+	padding-top: 13px;
+}
+
+.facebook a:hover {
+	background: #3B5998;
+	color: #fff;
+	border: 1px solid #3B5998;
+}
+
+.twitter a:hover {
+	background: #00ACED;
+	color: #fff;
+	border: 1px solid #00ACED;
+}
+
+.google a:hover {
+	background: #DD4B39;
+	color: #fff;
+	border: 1px solid #DD4B39;
+}
+
+.pinterest a:hover {
+	background: #CB2027;
+	color: #fff;
+	border: 1px solid #CB2027;
+}
+
+.footer-content h5 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	padding-top: 16px;
+}
+
+.footer-content li a {
+	display: inline-block;
+	margin-bottom: 17px;
+}
+
+.footer-company,
+.footer-links,
+.footer-support,
+.footer-recommend {
+	float: right;
+}
+
+.footer-bottom {
+	color: #fff;
+	font-size: 15px;
+	padding-top: 40px;
+	border-top: 1px solid #999;
+	margin-top: 65px;
+}
+
+.footer-bottom li {
+	list-style: none;
+	display: inline-block;
+}
+
+.footer-bottom li a {
+	text-decoration: none;
+	color: #999;
+	font-size: 15px;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-left: 18px;
+}
+
+ul.footer-menu {
+	float: right;
+}
+
+footer.section-padding {
+	padding-bottom: 40px;
+}
+
+.footer-bottom p a {
+	color: #EBA807;
+	text-decoration: none;
+}
